@@ -1063,6 +1063,7 @@ int CmdLFfind(const char *Cmd)
 
 	PrintAndLog("\nNo Known Tags Found lets try T55xx!\n");
 	if (CheckChipType(cmdp)) {
+		CmdLFT55XX("detect");
 		return 1;
 	}
 	if (testRaw=='u' || testRaw=='U') {
