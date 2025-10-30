@@ -1061,7 +1061,7 @@ int CmdLFfind(const char *Cmd)
 		return CheckChipType(cmdp);		
 	}
 
-	PrintAndLog("\nNo Known Tags Found!\n");
+	PrintAndLog("\nNo Known Tags Found lets try T55xx!\n");
 	if (testRaw=='u' || testRaw=='U') {
 		//ans=CheckChipType(cmdp);
 		//test unknown tag formats (raw mode)0
